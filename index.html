@@ -110,6 +110,9 @@
         }
 
         function revealAnswer(button, isCorrect) {
+            document.querySelectorAll("button").forEach(btn => {
+                btn.disabled = true;
+            });
             button.classList.add(isCorrect ? "correct" : "incorrect");
             if (!isCorrect) {
                 document.querySelectorAll("button").forEach(btn => {
@@ -121,6 +124,9 @@
             setTimeout(() => {
                 document.getElementById("quiz").classList.add("hidden");
                 document.querySelector(".title-screen").classList.remove("hidden");
+                document.querySelectorAll("button").forEach(btn => {
+                    btn.disabled = false;
+                });
             }, 10000);
         }
 
