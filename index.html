@@ -11,6 +11,7 @@
             padding: 20px;
             background-color: #f4e4c1;
             color: #5a3e1b;
+            transition: background-color 0.5s, color 0.5s;
         }
         .quiz-container, .title-screen {
             max-width: 90%;
@@ -32,7 +33,7 @@
             margin: 10px 0;
             color: #8b5a2b;
         }
-        button {
+        .category-button {
             display: block;
             width: 100%;
             margin-top: 10px;
@@ -40,14 +41,15 @@
             font-size: 18px;
             cursor: pointer;
             border: 2px solid #8b5a2b;
-            background-color: #e0c39a;
-            color: #5a3e1b;
             border-radius: 5px;
             font-family: 'Times New Roman', serif;
+            color: white;
         }
-        button:hover {
-            background-color: #d1a57a;
-        }
+        .category-vocab { background-color: #425074; }
+        .category-politics { background-color: #58653e; }
+        .category-culture { background-color: #6e2121; }
+        .category-myth { background-color: #b46217; }
+        .category-button:hover { opacity: 0.8; }
         .hidden { display: none; }
         .correct { background-color: lightgreen !important; }
         .incorrect { background-color: lightcoral !important; }
@@ -63,7 +65,10 @@
     <div class="title-screen">
         <h1>Proelium Deorum</h1>
         <h2>Kampf der Götter</h2>
-        <button onclick="startQuiz()">Frage stellen</button>
+        <button class="category-button category-vocab" onclick="startQuiz('questions_vocab.json', '#425074')">Vokabeln</button>
+        <button class="category-button category-politics" onclick="startQuiz('questions_politics.json', '#58653e')">Römische Geschichte und Politik</button>
+        <button class="category-button category-culture" onclick="startQuiz('questions_culture.json', '#6e2121')">Römische Kultur</button>
+        <button class="category-button category-myth" onclick="startQuiz('questions_myth.json', '#b46217')">Antike Mythologie</button>
     </div>
 
     <div class="quiz-container hidden" id="quiz">
@@ -74,15 +79,20 @@
     <script>
         let questions = [];
         let askedQuestions = new Set();
+        let currentCategory = '';
 
-        async function fetchQuestions() {
-            const response = await fetch('questions.json');
-            questions = await response.json();
-        }
-
-        function startQuiz() {
+        async function startQuiz(categoryFile, bgColor) {
+            document.body.style.backgroundColor = bgColor;
             document.querySelector(".title-screen").classList.add("hidden");
             document.getElementById("quiz").classList.remove("hidden");
+            currentCategory = categoryFile;
+            loadQuestions(categoryFile);
+        }
+
+        async function loadQuestions(categoryFile) {
+            const response = await fetch(categoryFile);
+            questions = await response.json();
+            askedQuestions.clear();
             loadQuestion();
         }
 
@@ -124,13 +134,12 @@
             setTimeout(() => {
                 document.getElementById("quiz").classList.add("hidden");
                 document.querySelector(".title-screen").classList.remove("hidden");
+                document.body.style.backgroundColor = "#f4e4c1";
                 document.querySelectorAll("button").forEach(btn => {
                     btn.disabled = false;
                 });
             }, 10000);
         }
-
-        fetchQuestions();
     </script>
 </body>
 </html>
