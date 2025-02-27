@@ -1,0 +1,122 @@
+[
+    {
+        "question": "Welche typische römische Kleidung trugen Bürger über der Tunika?",
+        "options": ["Toga", "Stola", "Palla", "Tunica"],
+        "correct": "Toga"
+    },
+    {
+        "question": "Welches Getränk war in der römischen Kultur am weitesten verbreitet?",
+        "options": ["Met", "Bier", "Wein", "Wasser"],
+        "correct": "Wein"
+    },
+    {
+        "question": "Wie nannte man eine große römische Badanlage?",
+        "options": ["Thermen", "Taberna", "Insula", "Atrium"],
+        "correct": "Thermen"
+    },
+    {
+        "question": "Welcher Wochentag war in der römischen Kultur dem Gott Saturn gewidmet?",
+        "options": ["Montag", "Samstag", "Sonntag", "Freitag"],
+        "correct": "Samstag"
+    },
+    {
+        "question": "Welches Tier war das Symbol Roms?",
+        "options": ["Wolf", "Adler", "Löwe", "Bär"],
+        "correct": "Wolf"
+    },
+    {
+        "question": "Wie nannte man die römischen Volksversammlungen?",
+        "options": ["Comitia", "Curia", "Forum", "Senatus"],
+        "correct": "Comitia"
+    },
+    {
+        "question": "Was war die bevorzugte Fußbodenheizung der Römer?",
+        "options": ["Hypokaustum", "Aquädukt", "Forum", "Latifundium"],
+        "correct": "Hypokaustum"
+    },
+    {
+        "question": "Was war die häufigste Mahlzeit der Römer am Morgen?",
+        "options": ["Wein und Brot", "Frisches Fleisch", "Käse und Eier", "Brei aus Getreide"],
+        "correct": "Brei aus Getreide"
+    },
+    {
+        "question": "Wie wurde das römische Amphitheater genutzt?",
+        "options": ["Für Theateraufführungen", "Für Gladiatorenkämpfe", "Für religiöse Zeremonien", "Als Markt"],
+        "correct": "Für Gladiatorenkämpfe"
+    },
+    {
+        "question": "Welche römische Göttin war für das Herdfeuer und die Familie zuständig?",
+        "options": ["Venus", "Juno", "Vesta", "Minerva"],
+        "correct": "Vesta"
+    },
+    {
+        "question": "Wie hieß das Hauptmahl am Abend in Rom?",
+        "options": ["Prandium", "Cena", "Ientaculum", "Secunda Mensa"],
+        "correct": "Cena"
+    },
+    {
+        "question": "Wie nannte man ein römisches Wohnhaus für reiche Bürger?",
+        "options": ["Insula", "Domus", "Villa", "Taberna"],
+        "correct": "Domus"
+    },
+    {
+        "question": "Welches Material benutzten die Römer häufig für den Bau ihrer Straßen?",
+        "options": ["Holz", "Sand", "Beton", "Marmor"],
+        "correct": "Beton"
+    },
+    {
+        "question": "Wie nannte man den Innenhof eines römischen Hauses?",
+        "options": ["Forum", "Caldarium", "Atrium", "Tablinum"],
+        "correct": "Atrium"
+    },
+    {
+        "question": "Was war das Hauptnahrungsmittel der meisten Römer?",
+        "options": ["Fisch", "Weizen", "Rindfleisch", "Reis"],
+        "correct": "Weizen"
+    },
+    {
+        "question": "Wie nannte man in Rom eine große öffentliche Trinkwasserleitung?",
+        "options": ["Circus", "Aquädukt", "Thermen", "Porta"],
+        "correct": "Aquädukt"
+    },
+    {
+        "question": "Wie wurden die wichtigsten Familien Roms genannt?",
+        "options": ["Patrizier", "Plebejer", "Equites", "Senatoren"],
+        "correct": "Patrizier"
+    },
+    {
+        "question": "Welches Spektakel fand im Circus Maximus statt?",
+        "options": ["Gladiatorenkämpfe", "Pferderennen", "Dichterwettbewerbe", "Gerichtsverhandlungen"],
+        "correct": "Pferderennen"
+    },
+    {
+        "question": "Welche Farbe war typisch für die Kleidung römischer Senatoren?",
+        "options": ["Rot", "Blau", "Lila", "Weiß mit Purpursaum"],
+        "correct": "Weiß mit Purpursaum"
+    },
+    {
+        "question": "Welche römische Gottheit wurde besonders mit dem Krieg in Verbindung gebracht?",
+        "options": ["Jupiter", "Apollo", "Mars", "Neptun"],
+        "correct": "Mars"
+    },
+    {
+        "question": "Wie nannten die Römer die römische Staatsreligion?",
+        "options": ["Pax Romana", "Mos maiorum", "Pontificium", "Religio Romana"],
+        "correct": "Religio Romana"
+    },
+    {
+        "question": "Wie nannten die Römer die Gladiatorenschulen?",
+        "options": ["Collegia", "Ludi", "Forum", "Legion"],
+        "correct": "Ludi"
+    },
+    {
+        "question": "Welcher Feiertag war das römische Neujahrsfest?",
+        "options": ["Saturnalien", "Lupercalia", "Kalendae Januar", "Feralia"],
+        "correct": "Kalendae Januar"
+    },
+    {
+        "question": "Was war ein 'Sesterz'?",
+        "options": ["Ein Kleidungsstück", "Eine römische Münze", "Ein Wachstafelbuch", "Ein Schmuckstück"],
+        "correct": "Eine römische Münze"
+    }
+]
