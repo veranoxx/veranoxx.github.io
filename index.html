@@ -127,7 +127,13 @@
             document.getElementById("question").innerText = "Frage lädt...";
             document.getElementById("options").innerHTML = "";
             setTimeout(() => {
-                let question = questions[currentCategory][Math.floor(Math.random() * questions[currentCategory].length)];
+                let availableQuestions = questions[currentCategory].filter(q => !askedQuestions.has(q.question));
+                if (availableQuestions.length === 0) {
+                    askedQuestions.clear();
+                    availableQuestions = questions[currentCategory];
+                }
+                let question = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
+                askedQuestions.add(question.question);
                 document.getElementById("question").innerText = question.question;
                 question.options.forEach((option) => {
                     const button = document.createElement("button");
