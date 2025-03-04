@@ -98,10 +98,7 @@
         "question": "Wer ist der Gott der Unterwelt in der römischen Mythologie?",
         "options": ["Mars", "Pluto", "Merkur", "Neptun"],
         "correct": "Pluto"
-    }
-]
-
-[
+    },
     {
         "question": "Welcher Titan verschlang seine Kinder?",
         "options": ["Prometheus", "Atlas", "Kronos", "Hyperion"],
@@ -196,11 +193,7 @@
         "question": "Wer hatte einen goldenen Apfel für die schönste Göttin?",
         "options": ["Hermes", "Paris", "Achill", "Zeus"],
         "correct": "Paris"
-    }
-]
-
-
-[
+    },
     {
         "question": "Welcher Titan trägt den Himmel auf seinen Schultern?",
         "options": ["Kronos", "Prometheus", "Atlas", "Hyperion"],
