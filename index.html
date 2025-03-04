@@ -103,24 +103,18 @@
             try {
                 const categories = ['vocab', 'politics', 'culture', 'myth'];
                 for (let category of categories) {
-                    alert(`Lade Datei: questions_${category}.json`);
                     const response = await fetch(`questions_${category}.json`);
-                    if (!response.ok) {
-                        alert(`Fehler beim Laden der Datei: questions_${category}.json`);
-                        throw new Error(`Fehler beim Laden der Datei: questions_${category}.json`);
-                    }
+                    if (!response.ok) throw new Error();
                     questions[category] = await response.json();
-                    alert(`Erfolgreich geladen: questions_${category}.json`);
                 }
                 document.getElementById("loading-screen").classList.add("hidden");
                 document.getElementById("title-screen").classList.remove("hidden");
             } catch (error) {
-                alert("Fehler beim Laden der Fragen: " + error.message);
+                alert("Fehler beim Laden der Fragen. Bitte überprüfen Sie die JSON-Dateien.");
             }
         }
 
         function startQuiz(category) {
-            alert(`Quiz gestartet: ${category}`);
             document.body.style.backgroundColor = getCategoryColor(category);
             document.getElementById("title-screen").classList.add("hidden");
             document.getElementById("quiz").classList.remove("hidden");
@@ -130,14 +124,9 @@
         }
 
         function loadQuestion() {
-            alert(`Frage aus ${currentCategory} wird geladen...`);
             document.getElementById("question").innerText = "Frage lädt...";
             document.getElementById("options").innerHTML = "";
             setTimeout(() => {
-                if (questions[currentCategory].length === 0) {
-                    alert("Keine Fragen in dieser Kategorie gefunden!");
-                    return;
-                }
                 let question = questions[currentCategory][Math.floor(Math.random() * questions[currentCategory].length)];
                 document.getElementById("question").innerText = question.question;
                 question.options.forEach((option) => {
