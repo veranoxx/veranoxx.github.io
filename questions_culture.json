@@ -118,5 +118,105 @@
         "question": "Was war ein 'Sesterz'?",
         "options": ["Ein Kleidungsstück", "Eine römische Münze", "Ein Wachstafelbuch", "Ein Schmuckstück"],
         "correct": "Eine römische Münze"
+    },
+    {
+        "question": "Wie nannten die Römer eine öffentliche Latrine?",
+        "options": ["Latrina", "Balneum", "Caldarium", "Tablinum"],
+        "correct": "Latrina"
+    },
+    {
+        "question": "Welche Farbe wurde traditionell von römischen Bräuten getragen?",
+        "options": ["Rot", "Weiß", "Blau", "Grün"],
+        "correct": "Weiß"
+    },
+    {
+        "question": "Wie nannte man die römische Sitte, sich während eines Banketts auf Liegen niederzulassen?",
+        "options": ["Triclinium", "Forum", "Tablinum", "Culina"],
+        "correct": "Triclinium"
+    },
+    {
+        "question": "Welcher Wochentag war nach dem römischen Gott Mars benannt?",
+        "options": ["Montag", "Dienstag", "Donnerstag", "Freitag"],
+        "correct": "Dienstag"
+    },
+    {
+        "question": "Welche Zutat war eine zentrale Basis der römischen Küche?",
+        "options": ["Zucker", "Olivenöl", "Kartoffeln", "Butter"],
+        "correct": "Olivenöl"
+    },
+    {
+        "question": "Welches römische Fest wurde zu Ehren der Toten gefeiert?",
+        "options": ["Lupercalia", "Saturnalien", "Feralia", "Floralia"],
+        "correct": "Feralia"
+    },
+    {
+        "question": "Was war ein 'garum' in der römischen Küche?",
+        "options": ["Ein Brotfladen", "Eine Fischsauce", "Ein süßes Gebäck", "Eine Art Käse"],
+        "correct": "Eine Fischsauce"
+    },
+    {
+        "question": "Wie viele Mahlzeiten am Tag waren in der römischen Kultur üblich?",
+        "options": ["Eine", "Zwei", "Drei", "Vier"],
+        "correct": "Drei"
+    },
+    {
+        "question": "Wie nannte man eine römische Markthalle?",
+        "options": ["Forum", "Basilika", "Insula", "Thermae"],
+        "correct": "Basilika"
+    },
+    {
+        "question": "Welches Getränk war bei römischen Soldaten besonders beliebt?",
+        "options": ["Met", "Wasser", "Posca", "Milch"],
+        "correct": "Posca"
+    },
+    {
+        "question": "Was war die wichtigste Getreidesorte in der römischen Ernährung?",
+        "options": ["Gerste", "Roggen", "Weizen", "Hirse"],
+        "correct": "Weizen"
+    },
+    {
+        "question": "Welche Art von Brot wurde in Rom hauptsächlich von den ärmeren Schichten gegessen?",
+        "options": ["Weißbrot", "Gerstenbrot", "Maisbrot", "Haferbrot"],
+        "correct": "Gerstenbrot"
+    },
+    {
+        "question": "Wie nannte man eine römische Schule für wohlhabende Bürgerkinder?",
+        "options": ["Collegium", "Gymnasium", "Ludus", "Academia"],
+        "correct": "Ludus"
+    },
+    {
+        "question": "Welche Tätigkeit war für römische Senatoren offiziell verboten?",
+        "options": ["Führen einer Armee", "Handel treiben", "Besitz eines Hauses in Rom", "Teilnahme an Wagenrennen"],
+        "correct": "Handel treiben"
+    },
+    {
+        "question": "Welches Handwerk war in Rom besonders angesehen?",
+        "options": ["Töpferei", "Mosaikherstellung", "Weberei", "Brotbacken"],
+        "correct": "Mosaikherstellung"
+    },
+    {
+        "question": "Wie nannte man in Rom die Kaufleute und Geschäftsleute?",
+        "options": ["Plebejer", "Equites", "Mercatores", "Patrizier"],
+        "correct": "Mercatores"
+    },
+    {
+        "question": "Wie hieß das römische Gericht, das für die Zivilprozesse zuständig war?",
+        "options": ["Praetorium", "Comitia Centuriata", "Curia", "Cognitio extra ordinem"],
+        "correct": "Praetorium"
+    },
+    {
+        "question": "Welches Lebensmittel war in Rom eine Delikatesse und wurde oft als Luxusware gehandelt?",
+        "options": ["Gänseleber", "Honig", "Austern", "Feigen"],
+        "correct": "Austern"
+    },
+    {
+        "question": "Wie nannten die Römer die Staatskasse?",
+        "options": ["Aerarium", "Fiscus", "Tributum", "Vectigal"],
+        "correct": "Aerarium"
+    },
+    {
+        "question": "Welche Sportart war in der römischen Kultur besonders beliebt?",
+        "options": ["Wagenrennen", "Boxen", "Fußball", "Ringen"],
+        "correct": "Wagenrennen"
     }
 ]
