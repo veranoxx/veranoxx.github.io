@@ -70,12 +70,12 @@
     </style>
 </head>
 <body>
-    <div class="loading-screen">
+    <div class="loading-screen" id="loading-screen">
         <h1>Proelium Deorum</h1>
         <h2>Laden...</h2>
     </div>
     
-    <div class="title-screen hidden">
+    <div class="title-screen hidden" id="title-screen">
         <h1>Proelium Deorum</h1>
         <h2>Kampf der Götter</h2>
         <button class="category-button category-vocab" onclick="startQuiz('vocab')">Vokabeln</button>
@@ -100,18 +100,23 @@
         let currentCategory = '';
 
         async function fetchQuestions() {
-            const categories = ['vocab', 'politics', 'culture', 'myth'];
-            for (let category of categories) {
-                const response = await fetch(`questions_${category}.json`);
-                questions[category] = await response.json();
+            try {
+                const categories = ['vocab', 'politics', 'culture', 'myth'];
+                for (let category of categories) {
+                    const response = await fetch(`questions_${category}.json`);
+                    questions[category] = await response.json();
+                }
+                document.getElementById("loading-screen").classList.add("hidden");
+                document.getElementById("title-screen").classList.remove("hidden");
+            } catch (error) {
+                console.error("Error loading questions:", error);
+                alert("Fehler beim Laden der Fragen. Bitte versuchen Sie es später erneut.");
             }
-            document.querySelector(".loading-screen").classList.add("hidden");
-            document.querySelector(".title-screen").classList.remove("hidden");
         }
 
         function startQuiz(category) {
             document.body.style.backgroundColor = getCategoryColor(category);
-            document.querySelector(".title-screen").classList.add("hidden");
+            document.getElementById("title-screen").classList.add("hidden");
             document.getElementById("quiz").classList.remove("hidden");
             currentCategory = category;
             askedQuestions.clear();
@@ -122,10 +127,12 @@
             document.getElementById("question").innerText = "Frage lädt...";
             document.getElementById("options").innerHTML = "";
             setTimeout(() => {
-                let question;
-                do {
-                    question = questions[currentCategory][Math.floor(Math.random() * questions[currentCategory].length)];
-                } while (askedQuestions.has(question.question));
+                let availableQuestions = questions[currentCategory].filter(q => !askedQuestions.has(q.question));
+                if (availableQuestions.length === 0) {
+                    askedQuestions.clear();
+                    availableQuestions = questions[currentCategory];
+                }
+                let question = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
                 askedQuestions.add(question.question);
                 document.getElementById("question").innerText = question.question;
                 question.options.forEach((option) => {
@@ -150,9 +157,8 @@
             }
             setTimeout(() => {
                 document.getElementById("quiz").classList.add("hidden");
-                document.querySelector(".title-screen").classList.remove("hidden");
+                document.getElementById("title-screen").classList.remove("hidden");
                 document.body.style.backgroundColor = "#f4e4c1";
-                document.querySelectorAll(".answer-button").forEach(btn => btn.disabled = false);
             }, 10000);
         }
 
